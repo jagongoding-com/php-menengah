@@ -1,5 +1,4 @@
 <?php
-
 # sembunyikan semua pesan error bawaan PHP
 error_reporting(0);
 
@@ -30,12 +29,3 @@ register_shutdown_function(function () {
         );
     }
 });
-
-ob_start();
-echo "<h1>Selamat Datang</h1>";
-echo "<h2>Ini adalah halaman utama</h2>";
-
-# fungsi selamatPagi() tidak pernah didefinisikan
-selamatPagi();
-
-ob_end_flush();
